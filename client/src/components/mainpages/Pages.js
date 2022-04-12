@@ -12,6 +12,8 @@ import Categories from './categories/Categories'
 import CreateProduct from './createProduct/CreateProduct'
 
 import {GlobalState} from '../../GlobalState'
+import Main from './main/main'
+import EsBel from './esemenyek_bel/EsBel'
 
 
 function Pages() {
@@ -22,7 +24,7 @@ function Pages() {
 
     return (
         <Switch>
-            <Route path="/" exact component={Products} />
+            <Route path="/" exact component={Main} />
             <Route path="/detail/:id" exact component={DetailProduct} />
 
             <Route path="/login" exact component={isLogged ? NotFound : Login} />
@@ -34,6 +36,7 @@ function Pages() {
 
             <Route path="/history" exact component={isLogged ? OrderHistory : NotFound} />
             <Route path="/history/:id" exact component={isLogged ? OrderDetails : NotFound} />
+            <Route path="/events" exact component={isLogged ? EsBel : NotFound} />
 
             <Route path="/cart" exact component={Cart} />
 

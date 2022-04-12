@@ -1,0 +1,23 @@
+.tarto{
+    display: flex;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    background-color: #484848;
+}
+
+.footerlogo {
+    width: 31.28px;
+    height: 31.28px;
+    margin: 5px;
+}
+
+.jog {
+    font-family: 'Arial Black';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10px;
+    line-height: 10px;
+
+    color: #FFFFFF;
+}

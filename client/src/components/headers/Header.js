@@ -5,6 +5,8 @@ import Close from './icon/close.svg'
 import Cart from './icon/cart.svg'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
+import logoKep from '../../images/Header/logo/botcolor.png'  
+import logoKep2 from '../../images/Header/logo/felirat_red.png'  
 
 function Header() {
     const state = useContext(GlobalState)
@@ -34,6 +36,7 @@ function Header() {
         return(
             <>
                 <li><Link to="/history">History</Link></li>
+                <li><Link to="/events">Események</Link></li>
                 <li><Link to="/" onClick={logoutUser}>Logout</Link></li>
             </>
         )
@@ -52,12 +55,18 @@ function Header() {
 
             <div className="logo">
                 <h1>
-                    <Link to="/">{isAdmin ? 'Admin' : 'DevAT Shop'}</Link>
+                    <Link to="/">{isAdmin ? 
+                    <>
+                    <img className="logokep" src={logoKep} />
+                    <img className="logokep2" src={logoKep2} /> 
+                    </>
+                    : 
+                    'DevAT Shop'}</Link>
                 </h1>
             </div>
 
             <ul style={styleMenu}>
-                <li><Link to="/">{isAdmin ? 'Products' : 'Shop'}</Link></li>
+                <li><Link to="/">{isAdmin ? 'Jegyek' : 'Jegyek'}</Link></li>
 
                 {isAdmin && adminRouter()}
 

@@ -13,7 +13,7 @@ header .logo{
 }
 header a{
     text-transform: uppercase;
-    color: #555;
+    color: rgb(221, 221, 221);
 }
 header ul li{
     display: inline-block;
@@ -39,4 +39,14 @@ header ul li:hover{
     right: -10px;
     padding: 5px 7px;
     font-size: 10px;
+}
+
+.logokep {
+    width: 52px;
+    height: 52px;
+}
+
+.logokep2 {
+    width: 141px;
+height: 34px;
 }
