@@ -10,28 +10,28 @@ const EsBel = () => {
       <div className='container'>
           <div className="row">
               <div className="col-sm-3">
-                  <a href='./youtopia.js'>
+                  <a href="/youtopia">
                     <img src={youtopia} alt="" />
                   </a>
+                  <p></p>
               </div>
               <div className="col-sm-3">
-                  <a href="">
+                  <a href="/nice">
                     <img src={nice} alt="" />
                   </a>
               </div>
               <div className="col-sm-3">
-                  <a href="">
-                    <img src={nofear} alt="" />
+                  <a href="/nofear">
+                    <img src={nofear} alt="nofear" />
                   </a>
               </div>
               <div className="col-sm-3">
-                  <a href="">
+                  <a href="/blackmamba">
                     <img src={blackmamba} alt="" />
                   </a>
               </div>
           </div>
       </div>
-      
       </>
   )
 }

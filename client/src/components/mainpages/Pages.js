@@ -14,6 +14,10 @@ import CreateProduct from './createProduct/CreateProduct'
 import {GlobalState} from '../../GlobalState'
 import Main from './main/main'
 import EsBel from './esemenyek_bel/EsBel'
+import youtopia from './esemenyek_bel/youtopia'
+import blackmamba from './esemenyek_bel/blackmamba'
+import nice002 from './esemenyek_bel/nice002'
+import nofear from './esemenyek_bel/nofear'
 
 
 function Pages() {
@@ -37,6 +41,11 @@ function Pages() {
             <Route path="/history" exact component={isLogged ? OrderHistory : NotFound} />
             <Route path="/history/:id" exact component={isLogged ? OrderDetails : NotFound} />
             <Route path="/events" exact component={isLogged ? EsBel : NotFound} />
+            
+            <Route path="/youtopia" exact component={isLogged ? youtopia : NotFound} />
+            <Route path="/blackmamba" exact component={isLogged ? blackmamba : NotFound} />
+            <Route path="/nice" exact component={isLogged ? nice002 : NotFound} />
+            <Route path="/nofear" exact component={isLogged ? nofear : NotFound} />
 
             <Route path="/cart" exact component={Cart} />
 

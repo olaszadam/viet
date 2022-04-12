@@ -4,7 +4,7 @@ import youtopia_nagy from './youtopia_nagy.png'
 const youtopia = () => {
   return (
     <div>
-        <img src={youtopia_nagy} alt="" />
+        <img src={youtopia_nagy} alt="youtopia" />
         <p>alami</p>
     </div>
   )

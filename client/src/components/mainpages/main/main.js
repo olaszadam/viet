@@ -24,10 +24,10 @@ const Main = () => {
     <img src={petre} alt="petre" width="1100" height="500"/>
   </div>
   <div className="carousel-item">
-    <img src={marco} alt="Chicago" width="1100" height="500"/>
+    <img src={marco} alt="marco" width="1100" height="500"/>
   </div>
   <div className="carousel-item">
-    <img src={chris} alt="New York" width="1100" height="500"/>
+    <img src={chris} alt="chris" width="1100" height="500"/>
   </div>
 </div>
 
