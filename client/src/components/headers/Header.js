@@ -26,8 +26,8 @@ function Header() {
     const adminRouter = () =>{
         return(
             <>
-                <li><Link to="/create_product">Create Product</Link></li>
-                <li><Link to="/category">Categories</Link></li>
+                <li><Link to="/create_product">Jegy hozzáadása</Link></li>
+                <li><Link to="/category">Kategóriák</Link></li>
             </>
         )
     }
@@ -37,7 +37,7 @@ function Header() {
             <>
                 <li><Link to="/history">History</Link></li>
                 <li><Link to="/events">Események</Link></li>
-                <li><Link to="/" onClick={logoutUser}>Logout</Link></li>
+                <li><Link to="/" onClick={logoutUser}>Kijelentkezés</Link></li>
             </>
         )
     }

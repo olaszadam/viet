@@ -46,6 +46,9 @@ function Pages() {
             <Route path="/blackmamba" exact component={isLogged ? blackmamba : NotFound} />
             <Route path="/nice" exact component={isLogged ? nice002 : NotFound} />
             <Route path="/nofear" exact component={isLogged ? nofear : NotFound} />
+            <Route path="/chris" exact component={isLogged ? nofear : NotFound} />
+            <Route path="/marco" exact component={isLogged ? nofear : NotFound} />
+            <Route path="/petre" exact component={isLogged ? nofear : NotFound} />
 
             <Route path="/cart" exact component={Cart} />
 
