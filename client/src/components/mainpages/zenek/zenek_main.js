@@ -1,16 +1,14 @@
 import React from 'react'
-import chris_esemeny from "./chris_esemeny.png"
-import marco_esemeny from "./marco_esemeny.png"
-import petre_esemeny from "./petre_esemeny.png"
+import alliwant from './aiwaxx.png'
 
-const EsKul = () => {
+const zenek_main = () => {
   return (
     <>
       <div className='container'>
           <div className="row">
               <div className="col-sm-3">
-                  <a href="/petre">
-                    <img src={petre_esemeny} alt="" />
+                  <a href="/alliwant">
+                    <img src={alliwant} alt="" />
                   </a>
                   <p></p>
               </div>
@@ -21,7 +19,7 @@ const EsKul = () => {
               </div>
               <div className="col-sm-3">
                   <a href="/chris">
-                    <img src={chris_esemeny} alt="chris_esemeny" />
+                    <img src={chris_esemeny} alt="" />
                   </a>
               </div>
           </div>
@@ -30,4 +28,4 @@ const EsKul = () => {
   )
 }
 
-export default EsKul
+export default zenek_main

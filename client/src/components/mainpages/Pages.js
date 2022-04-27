@@ -18,6 +18,9 @@ import youtopia from './esemenyek_bel/youtopia'
 import blackmamba from './esemenyek_bel/blackmamba'
 import nice002 from './esemenyek_bel/nice002'
 import nofear from './esemenyek_bel/nofear'
+import marco from './esemenyek_kul/marco'
+import chris from './esemenyek_kul/chris'
+import petre from './esemenyek_kul/petre'
 
 
 function Pages() {
@@ -46,8 +49,11 @@ function Pages() {
             <Route path="/blackmamba" exact component={isLogged ? blackmamba : NotFound} />
             <Route path="/nice" exact component={isLogged ? nice002 : NotFound} />
             <Route path="/nofear" exact component={isLogged ? nofear : NotFound} />
-            <Route path="/chris" exact component={isLogged ? nofear : NotFound} />
-            <Route path="/marco" exact component={isLogged ? nofear : NotFound} />
+            <Route path="/chris" exact component={isLogged ? chris : NotFound} />
+            <Route path="/marco" exact component={isLogged ? marco : NotFound} />
+            <Route path="/petre" exact component={isLogged ? petre : NotFound} />
+            <Route path="/petre" exact component={isLogged ? nofear : NotFound} />
+            <Route path="/petre" exact component={isLogged ? nofear : NotFound} />
             <Route path="/petre" exact component={isLogged ? nofear : NotFound} />
 
             <Route path="/cart" exact component={Cart} />

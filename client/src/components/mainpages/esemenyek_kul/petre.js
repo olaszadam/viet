@@ -1,5 +1,5 @@
 import React from 'react'
-import petre_esemeny_nagy from "./petre_esemeny_nagy"
+import petre_esemeny_nagy from "./petre_esemeny_nagy.png"
 
 const petre = () => {
   return (

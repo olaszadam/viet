@@ -1,5 +1,5 @@
 import React from 'react'
-import chris_esemeny_nagy from "./chris_esemeny_nagy"
+import chris_esemeny_nagy from "./chris_esemeny_nagy.png"
 
 const chris = () => {
   return (
