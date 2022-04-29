@@ -7,6 +7,7 @@ import {Link} from 'react-router-dom'
 import axios from 'axios'
 import logoKep from '../../images/Header/logo/botcolor.png'  
 import logoKep2 from '../../images/Header/logo/felirat_red.png'  
+import '../mainpages/pages.css'
 
 function Header() {
     const state = useContext(GlobalState)
@@ -36,8 +37,11 @@ function Header() {
         return(
             <>
                 <li><Link to="/history">History</Link></li>
-                <li><Link to="/events">Események</Link></li>
+                <li><Link to="/eventsbel">Események</Link></li>
+                <li><Link to="/eventskul">Külföld</Link></li>
+                <li><Link to="/zenek">Zenék</Link></li>
                 <li><Link to="/" onClick={logoutUser}>Kijelentkezés</Link></li>
+                
             </>
         )
     }
@@ -57,11 +61,11 @@ function Header() {
                 <h1>
                     <Link to="/">{isAdmin ? 
                     <>
-                    <img className="logokep" src={logoKep} />
-                    <img className="logokep2" src={logoKep2} /> 
+                    <img className="logokep" src={logoKep} alt="logo1" />
+                    <img className="logokep2" src={logoKep2} alt="logo2" /> 
                     </>
                     : 
-                    'DevAT Shop'}</Link>
+                    'BOT Project'}</Link>
                 </h1>
             </div>
 
@@ -71,7 +75,7 @@ function Header() {
                 {isAdmin && adminRouter()}
 
                 {
-                    isLogged ? loggedRouter() : <li><Link to="/login">Login ✥ Register</Link></li>
+                    isLogged ? loggedRouter() : <li><Link to="/login">Bejelentkezés</Link></li>
                 }
 
                 <li onClick={() => setMenu(!menu)}>

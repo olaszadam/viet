@@ -21,7 +21,11 @@ import nofear from './esemenyek_bel/nofear'
 import marco from './esemenyek_kul/marco'
 import chris from './esemenyek_kul/chris'
 import petre from './esemenyek_kul/petre'
-
+import zenek_main from './zenek/zenek_main'
+import alliwant from './zenek/alliwant/alliwant'
+import edleez from './zenek/edleez/edleez'
+import rawflex from './zenek/rawflex/rawflex'
+import EsKul from './esemenyek_kul/EsKul'
 
 function Pages() {
     const state = useContext(GlobalState)
@@ -43,7 +47,8 @@ function Pages() {
 
             <Route path="/history" exact component={isLogged ? OrderHistory : NotFound} />
             <Route path="/history/:id" exact component={isLogged ? OrderDetails : NotFound} />
-            <Route path="/events" exact component={isLogged ? EsBel : NotFound} />
+            <Route path="/eventsbel" exact component={isLogged ? EsBel : NotFound} />
+            <Route path="/eventskul" exact component={isLogged ? EsKul : NotFound} />
             
             <Route path="/youtopia" exact component={isLogged ? youtopia : NotFound} />
             <Route path="/blackmamba" exact component={isLogged ? blackmamba : NotFound} />
@@ -52,9 +57,10 @@ function Pages() {
             <Route path="/chris" exact component={isLogged ? chris : NotFound} />
             <Route path="/marco" exact component={isLogged ? marco : NotFound} />
             <Route path="/petre" exact component={isLogged ? petre : NotFound} />
-            <Route path="/petre" exact component={isLogged ? nofear : NotFound} />
-            <Route path="/petre" exact component={isLogged ? nofear : NotFound} />
-            <Route path="/petre" exact component={isLogged ? nofear : NotFound} />
+            <Route path="/zenek" exact component={isLogged ? zenek_main : NotFound} />
+            <Route path="/alliwant/alliwant" exact component={isLogged ? alliwant : NotFound} />
+            <Route path="/edleez/edleez" exact component={isLogged ? edleez : NotFound} />
+            <Route path="/rawflex/rawflex" exact component={isLogged ? rawflex : NotFound} />
 
             <Route path="/cart" exact component={Cart} />
 

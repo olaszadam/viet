@@ -1,6 +1,6 @@
 .tarto{
     display: flex;
-    height: 150px;
+    height: 100px;
     align-items: center;
     justify-content: center;
     background-color: #484848;
@@ -20,4 +20,13 @@
     line-height: 10px;
 
     color: #FFFFFF;
+}
+
+.szovTarto {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    line-height: 15px;
+    color: #FFFFFF;
+    font-family: 'Arial Black';
 }

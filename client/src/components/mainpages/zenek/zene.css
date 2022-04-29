@@ -1,0 +1,28 @@
+.background_main {
+    background-image: url(botzenek.png);
+    border-radius: 8px;
+    box-shadow: inset;
+}
+
+.background {
+    border-radius: 8px;
+    background-image: url(label_back.png);
+}
+
+.releases {
+    width: 150px;
+    height: 150px;
+}
+
+.row {
+    padding: 15px;
+}
+
+.mini-box {
+    padding: 15px;
+}
+
+.labels {
+    padding-top: 60px;
+    padding-left: 60px;
+}

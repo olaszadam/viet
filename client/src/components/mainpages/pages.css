@@ -1,0 +1,26 @@
+.bg_es_kul_main {
+    background-image: url(./esemenyek_bel/proba.png);
+}
+
+.bg_es_bel_main {
+    background-image: url(./esemenyek_kul/proba.png);
+}
+
+.didzse {
+    color: aliceblue;
+    font-weight:lighter;
+    line-height: 18px;
+    padding-top: 10px;
+}
+
+.bg_kul{
+    background-image: url(./esemenyek_bel/background_events.png);
+}
+
+.bg_bel{
+    background-image: url(./esemenyek_bel/background_events.png);
+}
+
+.info {
+    color: aliceblue;
+}

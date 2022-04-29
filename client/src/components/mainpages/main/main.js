@@ -3,6 +3,7 @@ import petre from './petre.jpg';
 import marco from './marco.png';
 import chris from './chris.png';
 import './main.css';
+import '../pages.css';
 
 
 
