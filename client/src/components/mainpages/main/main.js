@@ -25,19 +25,19 @@ const Main = () => {
   <div className="carousel-item active">
     <img src={petre_proba} alt="petre" width="1100" height="500"/>
     <div className='kep'>
-    <img src={petre_nagy}/>
+    <img src={petre_nagy} alt='petre'/>
     </div>
   </div>
   <div className="carousel-item">
     <img src={marco} alt="marco" width="1100" height="500"/>
     <div className='kep'>
-    <img src={marco_nagy}/>
+    <img src={marco_nagy} alt='marco'/>
     </div>
   </div>
   <div className="carousel-item">
     <img src={chris} alt="chris" width="1100" height="500"/>
     <div className='kep'>
-    <img src={chris_nagy}/>
+    <img src={chris_nagy} alt='chris'/>
     </div>
   </div>
 </div>
