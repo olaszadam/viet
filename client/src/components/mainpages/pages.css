@@ -15,12 +15,45 @@
 
 .bg_kul{
     background-image: url(./esemenyek_bel/background_events.png);
+    height: 740px;
 }
 
 .bg_bel{
     background-image: url(./esemenyek_bel/background_events.png);
+    height: 740px;
 }
 
 .info {
     color: aliceblue;
+    text-align: center;
+}
+
+.rozsaszin {
+    color: #9D5F75;
+    opacity: 50%;
+}
+
+.cimke {
+    position: relative;
+}
+
+.feher {
+    color: #FFFFFF;
+    opacity: 70%;
+    font-family: 'Arial';
+    font-weight: 700;
+}
+
+.szurke {
+    color: #484848;
+    font-weight: 400;
+    font-family: 'Arial Black';
+    font-size: 20px;
+}
+
+.feher-vastag{
+    color: #FFFFFF;
+    font-family: 'Arial Black';
+    font-weight: 400;
+    font-size: 20px;
 }

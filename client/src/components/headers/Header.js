@@ -2,7 +2,6 @@ import React, {useContext, useState} from 'react'
 import {GlobalState} from '../../GlobalState'
 import Menu from './icon/menu.svg'
 import Close from './icon/close.svg'
-import Cart from './icon/cart.svg'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
 import logoKep from '../../images/Header/logo/botcolor.png'  
@@ -27,8 +26,8 @@ function Header() {
     const adminRouter = () =>{
         return(
             <>
-                <li><Link to="/create_product">Jegy hozzáadása</Link></li>
-                <li><Link to="/category">Kategóriák</Link></li>
+                {/* <li><Link to="/create_product">Jegy hozzáadása</Link></li>
+                <li><Link to="/category">Kategóriák</Link></li> */}
             </>
         )
     }
@@ -36,12 +35,12 @@ function Header() {
     const loggedRouter = () =>{
         return(
             <>
-                <li><Link to="/history">History</Link></li>
-                <li><Link to="/eventsbel">Események</Link></li>
-                <li><Link to="/eventskul">Külföld</Link></li>
-                <li><Link to="/zenek">Zenék</Link></li>
+                <span style={{fontWeight: 'bold',fontSize: '20px'}}>
+                <li><Link to="/eventsbel">#ITTHON</Link></li>
+                <li><Link to="/eventskul">#KÜLFÖLD</Link></li>
+                <li><Link to="/zenek">#ZENÉK</Link></li>
                 <li><Link to="/" onClick={logoutUser}>Kijelentkezés</Link></li>
-                
+                </span>
             </>
         )
     }
@@ -65,17 +64,19 @@ function Header() {
                     <img className="logokep2" src={logoKep2} alt="logo2" /> 
                     </>
                     : 
-                    'BOT Project'}</Link>
+                    <>
+                    <img className="logokep" src={logoKep} alt="logo1" />
+                    <img className="logokep2" src={logoKep2} alt="logo2" /> 
+                    </>}</Link>
                 </h1>
             </div>
 
             <ul style={styleMenu}>
-                <li><Link to="/">{isAdmin ? 'Jegyek' : 'Jegyek'}</Link></li>
 
                 {isAdmin && adminRouter()}
 
                 {
-                    isLogged ? loggedRouter() : <li><Link to="/login">Bejelentkezés</Link></li>
+                    isLogged ? loggedRouter() : <span style={{fontWeight: 'bold',fontSize: '20px'}}><li><Link to="/login">Bejelentkezés</Link></li></span>
                 }
 
                 <li onClick={() => setMenu(!menu)}>
@@ -83,16 +84,6 @@ function Header() {
                 </li>
 
             </ul>
-
-            {
-                isAdmin ? '' 
-                :<div className="cart-icon">
-                    <span>{cart.length}</span>
-                    <Link to="/cart">
-                        <img src={Cart} alt="" width="30" />
-                    </Link>
-                </div>
-            }
             
         </header>
     )

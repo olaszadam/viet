@@ -26,6 +26,7 @@ import alliwant from './zenek/alliwant/alliwant'
 import edleez from './zenek/edleez/edleez'
 import rawflex from './zenek/rawflex/rawflex'
 import EsKul from './esemenyek_kul/EsKul'
+import Slideshow from './main/main'
 
 function Pages() {
     const state = useContext(GlobalState)
@@ -35,7 +36,7 @@ function Pages() {
 
     return (
         <Switch>
-            <Route path="/" exact component={Main} />
+            <Route path="/" exact component={Slideshow} />
             <Route path="/detail/:id" exact component={DetailProduct} />
 
             <Route path="/login" exact component={isLogged ? NotFound : Login} />

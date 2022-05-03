@@ -1,7 +1,6 @@
 .background_main {
     background-image: url(botzenek.png);
     border-radius: 8px;
-    box-shadow: inset;
 }
 
 .background {
@@ -25,4 +24,8 @@
 .labels {
     padding-top: 60px;
     padding-left: 60px;
+}
+
+.fixed{
+    width: 300px;
 }

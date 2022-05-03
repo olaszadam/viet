@@ -14,12 +14,25 @@ const edleez = () => {
   return (
     <>
     <div className='background'>
+    <div className='container' style={{textAlign: 'right'}}>
+      <div className='row' >
+        <div className='col-sm-12'>
+          <p className='cimke'>
+            <p>
+              <span style={{fontWeight: "Bold", fontSize: "30px", fontFamily: "Arial Black", letterSpacing: "-0.09cm", lineHeight: '30px', color: '#FFFFFF'}}>EYE DEEP LEEZ REC.</span>
+            </p>
+              <p><span className='rozsaszin' style={{fontWeight: "Bold", fontSize: "100px", fontFamily: "Arial Black", letterSpacing: "-9px", lineHeight: '30px'}}>#ZENÉK/kiadók</span></p>
+          </p>
+        </div>
+      </div>
+    </div>
     <div class="container">
     <div class="row">
-        <div class="col-xs-6">
-            <div class="big-box">
+        <div class="fixed">
+            <div class="big-box" style={{paddingTop: '50px'}}>
               <img src={edleez_page} alt="" />
-              </div>
+            </div>
+            <p><span style={{textAlign:'justify',lineHeight: '15px', color:'white',letterSpacing:'-1px'}}>A magyar Eye Deep Leez Recordings 2016-banindult hódító útjára a Bandcampen Udvari Viktor(Capeesh Society) és Kiss Krisztián (Khristian K) közös projektjeként. Szelekciójukat az ambient, aminimal és a Deep-Tech hangzás reprezentálja.Kiadójuk a szcénában hamar tett szert elismerésre.Viktor korai darabjai a minimal vonalán mozognak,hipnotikus dallamokkal, lüktető mélyekkel.Krisztián az ambient mellett, deep-tech darabokkal ünnepelteti meg a nagyérdeműt! Érdemes odafigyelni a Bandcamp oldalukra, aholmindig friss elektronikus zenei tartalmat találunk!</span></p>
         </div>
         <div class="col-xs-6">
           <div className='labels'>
